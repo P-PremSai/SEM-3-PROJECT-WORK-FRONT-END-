@@ -1,0 +1,48 @@
+form{
+  background-color: rgba(135,206,235,1);
+  width: 40%;
+  height: 75%;
+  display: inline-block;
+  border: 5px solid black;
+  padding: 2%;
+}
+img{
+  float: left;
+}
+
+div,h1{
+  text-align: center;
+}
+body{
+  background-image:url('https://pub-static.fotor.com/static/web/site/features/backgrounds/images/Fotor-wood-background-image-5.jpg');
+  background-image: cover;
+}
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #90ee90;
+  color: black;
+}
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  margin: 1% 0% 0% 69%;
+}
+.modeA{
+  font-size: 120%;
+  padding-bottom: 5px;
+  margin-left: -72%;
+}
+.container{
+  margin-left: -36%;
+  padding-bottom: 10px;
+}
+td{
+  padding: 1%;
+  text-align: left;
+  padding-right:2%;
+}

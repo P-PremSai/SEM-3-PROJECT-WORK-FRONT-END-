@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Academic details</title>
+    <link rel="stylesheet" href="page2.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="page2.js"></script>
+    <div id"college">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/BMS_College_of_Engineering.svg/1200px-BMS_College_of_Engineering.svg.png" width="100" height="100" >
+    <head>
+      <style>
+      h3{
+           margin: 0 0 0 0;
+      }
+      </style>
+      </head>
+      <body>  
+    <h1>B.M.S COLLEGE OF ENGINEERING</h1>+
+      <h3>Autonomus institue, Affiliated to VTU</h3>
+      <h3>Estd.1946</h3>
+      </body>
+      <hr>
+    </div>
+    <h1>Student Academic Details</h1>
+    <div >
+      <form name="form" id='my-form'>
+           <div>
+             <div class="modeA">
+               <label for="mode">Mode of Admission</label>
+             </div>
+            <div class="container">
+              <td><input type="radio" id="mode" name="mode" value="CET">CET</input>
+              <input type="radio" id="mode" name="mode" value="COMEDK">COMEDK</input>
+              <input type="radio" id="mode" name="mode" value="MANAGEMENT">MANAGEMENT</input>
+              <input type="radio" id="mode" name="mode" value="CET-SNQ">CET-SNQ</input>
+            </div>
+           </div>
+        <table>
+         <tr><td><label for="branch" style="padding-right:5%;">Branch:</label></td>
+        <td><select  name="bran">
+          <option value="">Select</option>
+          <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+          <option value="Information Science">Information Science</option>
+          <option value="Electronics and communication Enginnering">Electronics and communication Enginnering</option>
+          <option value="Mechanical Engineering">Mechanical Engineering</option>
+          <option value="Civil Engineering">Civil Engineering</option>
+          <option value="Biotechnology">Biotechnology</option>
+          <option value="Metalurgical Engineering">Metalurgical Engineering</option></td></tr>
+        </table>
+        <table>
+
+        <tr><h3>class 10th</h3> <td>  </td> </tr>
+
+      <tr><td><label for="board" style="padding-right:5%;"></label>Board:</label></td>
+        <td><select name="boar">
+            <option value="">Select</option>
+            <option value="CBSE">Central Board of Secondary Education</option>
+            <option value="ISC">Indian School Certificate</option>
+            <option value="ICSE">Indian School Certificate Examination</option>
+            <option value="NIOS">National Institute of Open Schooling</option>
+            <option value="UP Board">Board of High School and Intermediate Education Uttar Pradesh</option>
+            <option value="JKBOSE">Jammu and Kashmir State Board Of School Education</option>
+            <option value="RBSE">Board of Secondary Education Rajasthan</option>
+            <option value="HPBOSE">Himachal Pradesh Board of School Education</option>
+            <option value="MPBSE">Madhya Pradesh Board Of Secondary Education</option>
+            <option value="CGBSE">Chhattisgarh Board Of Secondary Education</option>
+            <option value="PSEB">Punjab School Education Board</option>
+            <option value="BSEH">Haryana Board of School Education</option>
+            <option value="GSEB">Gujarat Secondary and Higher Secondary Education Board</option>
+            <option value="MSBSHSE">Maharashtra State Board Of Secondary and Higher Secondary Education</option>
+            <option value="KSEEB">Karnataka Secondary Education Examination Board</option>
+            <option value="BSEAP">Andhra Pradesh Board of Secondary Education</option>
+            <option value="WBBSE">West Bengal Board of Secondary Education</option>
+        
+        <tr><td><label for="pass">Year of passing</label></td>
+        <td><select id="pass" class="" name="yop10">
+          <option value="">Select</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+        </select></td></tr>
+        <tr>
+          <td><label for="percent">percentage obtained</label></td>
+          <td><input type="number" id="percent" onchange="PercentValidate(this.value)"></td>
+        </tr>
+      </table>
+
+       <table>
+        <tr><h3>class 12th</h3> <td>  </td> </tr>
+
+        <tr><td><label for="board12" style="padding-right:5%;">Board:</label></td>
+            <td><select name="boa">
+                <option value="">Select</option>
+                <option value="CBSE">Central Board of Secondary Education</option>
+                <option value="ISC">Indian School Certificate</option>
+                <option value="ICSE">Indian School Certificate Examination</option>
+                <option value="NIOS">National Institute of Open Schooling</option>
+                <option value="UP Board">Board of High School and Intermediate Education Uttar Pradesh</option>
+                <option value="JKBOSE">Jammu and Kashmir State Board Of School Education</option>
+                <option value="RBSE">Board of Secondary Education Rajasthan</option>
+                <option value="HPBOSE">Himachal Pradesh Board of School Education</option>
+                <option value="PSEB">Punjab School Education Board</option>
+                <option value="BSEH">Haryana Board of School Education</option>
+                <option value="GSEB">Gujarat Secondary and Higher Secondary Education Board</option>
+                <option value="MSBSHSE">Maharashtra State Board Of Secondary and Higher Secondary Education</option>
+                <option value="KSEEB">Karnataka Secondary Education Examination Board</option>
+                <option value="BIEAP">Andhra Pradesh Board of Intermediate Education</option>
+                <option value="WBCHSE">West Bengal Council of Higher Secondary Education</option></td></tr>
+
+        <tr><td><label for="pass12">Year of passing</label></td>
+        <td><select id="pass12" class="" name="yop12">
+          <option value="">Select</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+        </select></td></tr>
+        <tr><td><label for="percent12">percentage obtained</label></td>
+        <td><input type="number" id="percent12" onchange="PercentValidate(this.value)"></td></tr>
+      </table>
+      </form>
+      </div>
+      <button type="submit" class="next" id='my-form' onclick="SubmitNext()">Next&raquo;</button>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+#college{
+  background-color: yellow;
+}
+img{
+  float: left;
+}
+form{
+  background-color: rgba(135,206,235,1);
+  width: 60%;
+  height: 75%;
+  display: inline-block;
+  border: 5px solid black;
+  padding: 2%;
+}
+div,h1{
+  text-align: center;
+}
+.parent{
+  display: inline-block;
+  margin-right: 7%;
+}
+body{
+  background-image:url('https://pub-static.fotor.com/static/web/site/features/backgrounds/images/Fotor-wood-background-image-5.jpg');
+  background-size: cover;
+}
+td{
+  text-align: left;
+  padding: 5px;
+}
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #90ee90;
+  color: black;
+}
+#check{
+  font-size: 110%;
+}
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  margin: 1% 0% 0% 0%;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.lbl {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.inp {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

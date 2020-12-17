@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student personnel details</title>
+    <link rel="stylesheet" href="page1.css">
+  <body>
+    <script type="text/javascript" src="page1.js"></script>
+    <div id"college">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/BMS_College_of_Engineering.svg/1200px-BMS_College_of_Engineering.svg.png" width="100" height="100" >
+    <head>
+      <style>
+      
+      h3{
+           margin: 0 0 0 0;
+      }
+      </style>
+      </head>
+      <body>
+      <h1>B.M.S COLLEGE OF ENGINEERING</h1>
+      <h3>Autonomus institue, Affiliated to VTU</h3>
+      <h3>Estd.1946</h3>
+      </body>
+      <hr>
+    </div>
+    
+    <h1 id="main">Student Personnel Details</h1>
+    <div>
+    <form id="my-form" name="form"><!--class="" action="index.html"  metion="thod="post"-->
+      <table>
+      <tr><td class="ifield"><label for="sfname">First Name:</label></td>
+      <td><input type="text" id="sfname" name="fname"></input></td></tr>
+      <tr><td class="ifield"><label for="slname" >Last Name:</label></td>
+      <td><input type="text" id="slname" name="lname" onchange="NameCheck(this.value)"></input></td></tr>
+      <tr><td class="ifield"><label for="dob" >Date of Birth:</label></td>
+      <td><input type="date" id="dob" name="dob"></input></td></tr>
+    
+        <tr><td class="ifield"><label for="gender">Gender:</label></td>
+        <td><select id="gender" class="" name="gen">
+        <option value ="">Select</option>
+        <option value ="Male">Male</option> 
+        <option value ="Female">Female</option> 
+        <option value ="Others">Others</option>  
+        </select>
+        </td></tr>
+      <tr><td class="ifield"><label for="mobile" >Mobile Number:</label></td>
+      <td><input type="number"id="mobile" name="number" onchange="PhoneNumber(this.value)"></td></tr>  <!--check this line again-->
+      <tr><td class="ifield"><label for="email" >Email ID:</label></td>
+      <td><input type="email" id="email" name="email" onchange="EmailCheck(this.value)"></td></tr>
+      <tr><td class="ifield"><label for="blood" >Blood Group:</label></td>
+      <td><select for="blood"  name="blo">
+        <option value="">Select</option>
+        <option value="o+">o<sup>+</sup></option>
+        <option value="o-">o<sup>-</sup></option>
+        <option value="A+">A<sup>+</sup></option>
+        <option value="A-">A<sup>-</sup></option>
+        <option value="B+">B<sup>+</sup></option>
+        <option value="B-">B<sup>-</sup></option>
+        <option value="AB+">AB<sup>+</sup></option>
+        <option value="AB-">AB<sup>-</sup></option>
+      </select></td><tr>
+      <tr><td class="ifield"><label for="country" >Nationality:</label></td>
+      <td><select id="country" name="contry">
+        <option value="">Select</option>
+        <option value="Indian">Indian</option>
+        <option value="Non-Indian">Non-Indian</option>
+      </select></td></tr>
+      <tr><td class="ifield"><label for="religion">Religion:</label></td>
+      <td><select id="religion" name="releg">
+        <option value="">Select</option>
+        <option value="Buddhism">Buddhism</option>
+        <option value="Christianity">Christianity</option>
+        <option value="Hinduism" >Hinduism</option>
+        <option value="Islam">Islam</option>
+        <option value="Jainism">Jainism</option>
+        <option value="Sikhism">Sikhism</option>
+        <option value="Other">Other</option>
+      </select></td></tr>
+      <tr><td class="ifield" name=""><label for="category">Category:</label></td>
+      <td><select id="category" name="cate">
+        <option value="">Select</option>
+        <option value="GEN">GEN</option>
+        <option value="OBC">OBC</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+        <option value="Other">Other</option>
+      </select></td></tr>
+      <tr><td class="ifield"><label for="adhar">Aadhar No.:</label></td>
+      <td><input type="number" id="adhar" name="adhar" onchange="AdharNo(this.value)"></input></td></tr>
+      </table>
+    </form><br>
+    <button type="submit" id="my-form" class="next" onclick="myFunction()">Next&raquo;</button>
+  </div>
+  </body>
+</html>

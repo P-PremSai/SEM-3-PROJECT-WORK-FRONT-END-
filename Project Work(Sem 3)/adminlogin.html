@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <style>
+        img {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        }
+        button:hover{
+        opacity:0.8;
+        }
+        .container{
+        padding:25px;
+        text-align:center;
+
+        }
+        input[type=text],input[type=password]
+        {
+        width:25%;
+        margin:8px 0;
+        padding:12px 20px;
+        box-sizing:border-box;
+        display:inline-block;
+        border:3px  solid black;
+
+        }
+        form{
+        border:3px solid #0000ff;
+        }
+        body{
+        background-image:url("https://media.istockphoto.com/vectors/cogwheel-hitech-digital-technology-and-engineering-background-vector-id655659258");
+        }
+        boader1{
+            box-sizing:border-box;
+            width:400px;
+            height:1200px;
+            padding:30px;
+            border:3px solid #00BFFF;
+        }
+
+
+
+
+    </style>
+    <script type="text/javascript">
+
+        function validateStudentEmail()
+        {
+
+            var email = document.getElementById('email').value;
+            var result = email.match('[a-z]+.[a-z]{3}@bmsce.ac.in');//admin: '[a-z]+.cse@bmsce.ac.in'
+            if(result==email)
+            {
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+        function validateStudentDetails()
+        {
+            if(validateStudentEmail() == true && document.getElementById('password').value != ''&& document.getElementById('password').value.length >=6)
+            {
+                window.location.href="admin page.htm";
+            }
+            else if(validateStudentEmail() == false)
+            {
+                alert('Please Enter the correct bmsce email');
+            }
+            else if(document.getElementById('password').value == '')
+            {
+                alert('Please Enter the password');
+            }
+            else if(document.getElementById('password').value.length <6)
+            {
+                alert('Please Enter the password correctly(minimum length 6)');
+            }
+            
+            else{
+                alert('Email Format is invalid or password field is empty or password length is less than 6');
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+<form name="login">
+    <div id="boarder1">
+<img src="https://upload.wikimedia.org/wikipedia/en/8/87/BMS_College_of_Engineering.svg"  width="150"
+     height="150" style="vertica">
+<p style="text-align:center;font-size:20px" >BMSCE</p>
+<p style="text-align:center;font-size:20px">ADMIN LOGIN</p>
+<div class="container">
+<label for="email" >EMAIL</label><br>
+<input type="text" id="email"  name="Email"placeholder="Enter email"><br>
+    <label for="pass" >PASSWORD</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+</div>
+<head>
+    <style>
+        div.relative {
+            position: relative;
+            top:50px;
+            left:625px;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative">
+ <a href="forgot password admin.html" style="text-align:right;color:#ff0000">Forgot password?</a><br>
+</div>
+</div>
+</body>
+</form>
+
+<head>
+    <style>
+    div.absolute1{
+       position: absolute;
+       top: 450px;
+       right: 225px;
+       width: 500px;
+    }
+    </style>
+    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    .btn1{
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color:#4dff4d;
+        color: black;
+        padding: 10px 14px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .info {
+      border-color: #2196F3;
+      color: black
+    }
+    
+    .info:hover {
+      background: #008000;
+      color: white;
+    }
+    </style>
+    </head>
+    <body>
+<div class="absolute1">
+ <button class="btn1 info" onclick="validateStudentDetails()">LOGIN</button><br>
+</div>
+</body>
+</body>
+</html>
